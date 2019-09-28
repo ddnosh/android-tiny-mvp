@@ -31,6 +31,13 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
+    //rxjava, rxandroid
     api 'io.reactivex.rxjava2:rxandroid:2.1.0'
     api 'io.reactivex.rxjava2:rxjava:2.2.3'
+
+    //rxlifecycle
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+
+    //autodispose
+    api 'com.uber.autodispose:autodispose-android-archcomponents:1.0.0-RC2'
 }

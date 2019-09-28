@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".disposable.DisposableActivity" />
+        <activity android:name=".rxlifecycle.RxLifecycleActivity" />
+        <activity android:name=".autodispose.AutodisposeActivity" />
     </application>
 
 </manifest>

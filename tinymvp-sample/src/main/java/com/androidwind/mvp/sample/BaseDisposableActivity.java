@@ -3,15 +3,15 @@ package com.androidwind.mvp.sample;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.androidwind.mvp.BaseContract;
+import com.androidwind.mvp.BaseDisposableContract;
 import com.androidwind.mvp.TUtil;
 
 /**
  * @author ddnosh
  * @website http://blog.csdn.net/ddnosh
  */
-public abstract class BaseActivity<P extends BaseContract.BasePresenter, M extends BaseContract.BaseModel>
-        extends AppCompatActivity implements BaseContract.BaseView {
+public abstract class BaseDisposableActivity<P extends BaseDisposableContract.BasePresenter, M extends BaseDisposableContract.BaseModel>
+        extends AppCompatActivity implements BaseDisposableContract.BaseView {
 
     public P mPresenter;
 

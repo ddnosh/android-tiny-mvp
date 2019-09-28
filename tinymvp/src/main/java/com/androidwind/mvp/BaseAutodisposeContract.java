@@ -4,7 +4,7 @@ package com.androidwind.mvp;
  * @author ddnosh
  * @website http://blog.csdn.net/ddnosh
  */
-public interface BaseContract {
+public interface BaseAutodisposeContract {
 
     interface BaseView {
 

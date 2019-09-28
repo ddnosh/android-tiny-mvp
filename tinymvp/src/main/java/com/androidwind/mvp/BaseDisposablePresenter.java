@@ -10,7 +10,7 @@ import io.reactivex.disposables.Disposable;
  * @author ddnosh
  * @website http://blog.csdn.net/ddnosh
  */
-public class BasePresenter<V extends BaseContract.BaseView, M extends BaseContract.BaseModel> implements BaseContract.BasePresenter<V, M> {
+public class BaseDisposablePresenter<V extends BaseDisposableContract.BaseView, M extends BaseDisposableContract.BaseModel> implements BaseDisposableContract.BasePresenter<V, M> {
 
     private Reference<V> mRefView;
     private M mModel;

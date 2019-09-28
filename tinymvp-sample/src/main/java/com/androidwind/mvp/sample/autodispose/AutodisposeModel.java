@@ -1,13 +1,14 @@
-package com.androidwind.mvp.sample;
+package com.androidwind.mvp.sample.autodispose;
+
+import com.androidwind.mvp.sample.disposable.DisposableContract;
 
 import io.reactivex.Observable;
-import io.reactivex.ObservableOnSubscribe;
 
 /**
  * @author ddnosh
  * @website http://blog.csdn.net/ddnosh
  */
-public class MainModel implements MainContract.Model {
+public class AutodisposeModel implements AutodisposeContract.Model {
 
     @Override
     public Observable<Boolean> executeMSg() {

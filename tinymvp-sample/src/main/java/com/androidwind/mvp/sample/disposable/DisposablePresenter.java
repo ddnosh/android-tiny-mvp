@@ -1,12 +1,12 @@
-package com.androidwind.mvp.sample;
+package com.androidwind.mvp.sample.disposable;
 
-import io.reactivex.functions.Consumer;
+import com.androidwind.mvp.sample.RxUtil;
 
 /**
  * @author ddnosh
  * @website http://blog.csdn.net/ddnosh
  */
-public class MainPresenter extends MainContract.Presenter {
+public class DisposablePresenter extends DisposableContract.Presenter {
     @Override
     void sendMsg() {
         addSubscribe(
