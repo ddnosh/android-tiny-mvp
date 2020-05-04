@@ -1,10 +1,15 @@
 package com.androidwind.mvp.sample;
 
+import android.arch.lifecycle.Lifecycle;
+import android.arch.lifecycle.LifecycleOwner;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.androidwind.mvp.BaseAutodisposeContract;
 import com.androidwind.mvp.TUtil;
+import com.uber.autodispose.AutoDispose;
+import com.uber.autodispose.AutoDisposeConverter;
+import com.uber.autodispose.android.lifecycle.AndroidLifecycleScopeProvider;
 
 /**
  * @author ddnosh
@@ -43,4 +48,9 @@ public abstract class BaseAutodisposeActivity<P extends BaseAutodisposeContract.
     protected abstract int getContentView();
 
     protected abstract void init();
+
+    @Override
+    public <T> AutoDisposeConverter<T> bindAutoDispose() {
+        return AutoDispose.autoDisposable(AndroidLifecycleScopeProvider.from(this, Lifecycle.Event.ON_DESTROY));
+    }
 }

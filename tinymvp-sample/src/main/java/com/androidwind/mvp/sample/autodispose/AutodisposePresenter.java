@@ -17,7 +17,7 @@ public class AutodisposePresenter extends AutodisposeContract.Presenter {
     void sendMsg() {
         getModel().executeMSg()
                 .compose(RxUtil.applySchedulers())
-                .as(AutoDispose.<Boolean>autoDisposable(AndroidLifecycleScopeProvider.from((LifecycleOwner) getView(), Lifecycle.Event.ON_DESTROY)))
+                .as(getView().bindAutoDispose())
                 .subscribe(bool -> getView().updateMsg(bool));
     }
 }

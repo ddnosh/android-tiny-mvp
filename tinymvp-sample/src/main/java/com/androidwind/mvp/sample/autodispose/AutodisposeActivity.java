@@ -3,9 +3,7 @@ package com.androidwind.mvp.sample.autodispose;
 import android.widget.Toast;
 
 import com.androidwind.mvp.sample.BaseAutodisposeActivity;
-import com.androidwind.mvp.sample.BaseDisposableActivity;
 import com.androidwind.mvp.sample.R;
-import com.androidwind.mvp.sample.disposable.DisposableContract;
 
 /**
  * @author ddnosh
